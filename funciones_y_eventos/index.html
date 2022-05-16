@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Actividad Nº2</title>
+</head>
+<!--background="/funciones_y_eventos/fondo.png"-->
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Concesionaria de Autos:</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+
+            <h1>elegir vehiculo:</h1>
+            <select id="eleccion">
+                <option selected disabled value="-1">Seleccione operación:</option>
+                <option value="0">Ford Ka</option>
+                <option value="1">Ford Fiesta</option>
+                <option value="2">Ford focus</option>
+            </select>
+
+            <button onclick="calculo()">Calcular</button>
+
+            <h2 id="resultado2">resultado</h2>
+            
+            <script src="main.js"></script>
+        </div>
+    </div>
+</body>
+</html>

@@ -52,6 +52,7 @@ console.log('elementos eliminados: '+eliminacion)
 //generar  copia de un arreglo
 let copia = arreglo.slice()
 console.log(copia.push('Go'))
+//cuando concatenamos un array con un string, todo se traduce en una cadena de texto
 console.log('arreglo copia: '+copia)
 console.log('original: '+arreglo)
 

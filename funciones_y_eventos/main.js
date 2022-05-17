@@ -4,17 +4,17 @@ const operacion = document.getElementById("eleccion").value
 
 let resultado = null;
 
-if (operacion = 0){
+if (operacion == 0){
     //ford ka
-    resultado = ((2900000*15)/100)-2900000
+    resultado = 2900000-((2900000*15)/100)
 }else {
-    if (operacion = 1){
+    if (operacion == 1){
         //ford fiesta
-        resultado = ((3350000*5)/100)-3350000
+        resultado = 3350000-((3350000*5)/100)
     }else{
         //ford focus
-        resultado = ((3960000*10)/100)-3960000
+        resultado = 3960000-((3960000*10)/100)
     }
 }
-document.getElementById("h_resultado").textContent = `resultado = ${resultado.toFixed(2)}`
+document.getElementById("resultado2").textContent = `resultado = ${resultado.toFixed(2)}`
 }

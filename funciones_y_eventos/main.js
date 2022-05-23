@@ -18,3 +18,4 @@ if (operacion == 0){
 }
 document.getElementById("resultado2").textContent = `resultado = ${resultado.toFixed(2)}`
 }
+resultado3 = 'nashe'

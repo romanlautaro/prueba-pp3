@@ -16,7 +16,7 @@ arreglo.forEach( (element, index) => {
     console.log(index+'-'+element)
 });
 
-//arreglar elemento al final de un array
+//agregar elemento al final de un array
 arreglo.push('Go')
 console.log(arreglo)
 
@@ -24,7 +24,7 @@ console.log(arreglo)
 arreglo.pop()
 console.log(arreglo)
 
-//como agregar un elemento al princpio de un arreglo
+//como agregar un elemento al principio de un arreglo
 arreglo.unshift('Go')
 console.log(arreglo)
 

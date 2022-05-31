@@ -18,5 +18,8 @@ if (operacion == 0){
 }
 document.getElementById("resultado2").textContent = `resultado = ${resultado.toFixed(2)}`
 }
+<<<<<<< HEAD
 resultado3 = 'nashe'
 dkasdasdkad
+=======
+>>>>>>> f4108aeb43a058fb922ae2596b33c06b5cdf2921

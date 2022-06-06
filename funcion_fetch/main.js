@@ -5,8 +5,8 @@ async function consumir_datos(){ //guardar url de usuarios .json
     //solo conservo los datos en JSON
     const datos_definitivos = await datos.json()
 
-    datos_definitivos.forEach(element => {
-        console.log(element.name)
+    datos_definitivos.forEach( (element, index) => {
+        console.log(index + element.name)
     });
 }
 

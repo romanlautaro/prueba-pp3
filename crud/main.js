@@ -14,7 +14,7 @@ function guardar(){
     }else{
         let grilla_clientes = []
         grilla_clientes.push(nuevo_cliente) 
-        localStorage.setItem("lista_clientes", JSON.stringify(grilla_clientes) )
+        localStorage.setItem("lista_clientes",JSON.stringify(grilla_clientes))
     }   
 
 }

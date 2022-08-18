@@ -32,6 +32,8 @@ function OBTENER_CLIENTES(){
                     <td>${element.dni}</td>
                     <td>
                         <button onclick="ELIMINAR_CLIENTE(${index})" class="btn btn-danger btn-sm"><i class="material-icons">delete_forever</i></button>
+                        <button class="btn btn-danger btn-sm"><i class="material-icons">border_color</i></button>
+                    <td>
                 </tr>
             `
             filas.push(fila)

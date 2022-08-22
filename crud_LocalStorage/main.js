@@ -15,6 +15,7 @@ function GUARDAR(){
         g_clientes.push(n_cliente)
         localStorage.setItem("lista_clientes", JSON.stringify(g_clientes))
     }
+    document.getElementById("form_cliente").reset() 
     OBTENER_CLIENTES()
 }
 function OBTENER_CLIENTES(){

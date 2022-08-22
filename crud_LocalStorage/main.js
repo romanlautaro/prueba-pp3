@@ -32,7 +32,7 @@ function OBTENER_CLIENTES(){
                     <td>${element.dni}</td>
                     <td>
                         <button onclick="ELIMINAR_CLIENTE(${index})" class="btn btn-danger btn-sm"><i class="material-icons">delete_forever</i></button>
-                        <button class="btn btn-danger btn-sm"><i class="material-icons">border_color</i></button>
+                        <button onclick="EDITAR_CLIENTE(${index})" class="btn btn-primary btn-sm"><i class="material-icons">border_color</i></button>
                     <td>
                 </tr>
             `
@@ -50,4 +50,35 @@ function ELIMINAR_CLIENTE(index){
     OBTENER_CLIENTES()
 }
 
-OBTENER_CLIENTES()
+function EDITAR_CLIENTE(index){
+    let lista_clientes = JSON.parse( localStorage.getItem("lista_clientes"))
+    document.getElementById("ls_nombre").value = lista_clientes[index].nombre
+    document.getElementById("ls_apellido").value = lista_clientes[index].apellido
+    document.getElementById("ls_dni").value = lista_clientes[index].dni
+
+    document.getElementById("btn_guardar").style.display = 'none'
+    document.getElementById("btn_actualizar").style.display = 'block'
+
+    localStorage.setItem("indice_cliente",index)
+}
+
+function ACTUALIZAR_CLIENTE(){
+
+    let indice = localStorage.getItem("indice_cliente")
+
+    let lista_clientes = JSON.parse( localStorage.getItem("lista_clientes"))
+
+    lista_clientes[indice].nombre = document.getElementById("ls_nombre").value
+    lista_clientes[indice].apellido = document.getElementById("ls_apellido").value
+    lista_clientes[indice].dni = document.getElementById("ls_dni").value
+
+    localStorage.setItem("lista_clientes", JSON.stringify(lista_clientes))
+    
+    OBTENER_CLIENTES()
+
+    document.getElementById("btn_guardar").style.display = 'block'
+    document.getElementById("btn_actualizar").style.display = 'none'
+
+    document.getElementById("form_cliente").reset() 
+}
+document.getElementById("btn_actualizar").addEventListener("click",ACTUALIZAR_CLIENTE)

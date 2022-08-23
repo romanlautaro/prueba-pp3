@@ -95,3 +95,6 @@ function ACTUALIZAR_CLIENTE(){
     document.getElementById("form_cliente").reset() 
 }
 document.getElementById("btn_actualizar").addEventListener("click",ACTUALIZAR_CLIENTE)
+
+
+OBTENER_CLIENTES()

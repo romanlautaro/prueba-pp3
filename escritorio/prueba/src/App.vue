@@ -1,23 +1,32 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Prueba</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <router-link to="/" class="nav-link">Home</router-link> 
-        <router-link to="/about" class="nav-link">About</router-link>
-        <router-link to="/nuestrasnoticias" class="nav-link">Noticias</router-link>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <router-link class="nav-link" to="/">Home</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/about">About</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/clientes">CLIENTES</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/usuarios">USUARIOS</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/productos">PRODUCTOS</router-link>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
- <router-view/>
-
+  <div class="container mt-3">
+    <router-view/>
+  </div>
 </template>
-
-<style>
-
-</style>
